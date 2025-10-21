@@ -1,0 +1,26 @@
+
+body
+{
+    background-color:#ffc4a3;
+}
+.head
+{
+    background-color:#f96d80;
+    padding:1px;
+    color: white;
+    text-align: center;
+}
+.header
+{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.footer
+{
+    background-color:#f96d80;
+    padding:1px;
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
