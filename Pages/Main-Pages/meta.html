@@ -1,0 +1,162 @@
+<html>
+    <body>
+        <h1 style="text-align: center;">
+            HTML - Meta Tags
+        </h1>
+        <div class="meta" >
+            <p>
+                HTML lets you specify metadata - additional important information about a document in a variety of ways. 
+                The META elements can be used to include name/value pairs describing properties of the HTML document,
+                such as author, expiry date, a list of keywords, document author etc.
+                <br>
+                The &lt;meta&gt; tag is used to provide such additional information.
+                This tag is an empty element and so does not have a closing tag but it carries information within its attributes.
+                <br>
+                You can include one or more meta tags in your document based on what information you want to keep in your document but in general,
+                meta tags do not impact physical appearance of the document so from appearance point of view, it does not matter if you include them or not.
+            </p>
+            <h3>Adding Meta Tags to Your Documents</h3>
+            <p>
+                You can add metadata to your web pages by placing &lt;meta&gt; tags inside the header of the document which is represented by &lt;head&gt; and &lt;/head&gt; tags. 
+                A meta tag can have following attributes in addition to core attributes −
+            </p>
+            <table style="width: 50%;border: 1px solid black; border-collapse: collapse;">
+                <tr style="border: 1px solid black;border-collapse: collapse;">
+                    <th style="border: 1px solid black;width:15%;padding:10px;"> Sr.No</th>
+                    <th style="padding:10px">Atrribute & Description</th>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black; text-align: center;" class="col-1">1</td>
+                    <td class="col-2" style="padding:10px">
+                        <h4 style="margin-bottom:10px">Name</h4>
+                        <p style="margin-top:5px">Name for the property. Can be anything. Examples include, keywords, description, author, revised, generator etc.</p>
+                    </td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td class="col-1" style="border: 1px solid black;text-align: center;">2</td>
+                    <td class="col-2" style="padding:10px">
+                        <h4 style="margin-bottom:10px">content</h4>
+                        <p style="margin-top:5px">Specifies the property's value.</p>
+                    </td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td class="col-1" style="border: 1px solid black; text-align: center;">3</td>
+                    <td class="col-2" style="padding:10px">
+                        <h4 style="margin-bottom:10px">scheme</h4>
+                        <p style="margin-top:5px">Specifies a scheme to interpret the property's value (as declared in the content attribute).</p>
+                    </td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td class="col-1" style="border: 1px solid black;text-align: center;">4</td>
+                    <td class="col-2" style="padding:10px">
+                        <h4 style="margin-bottom:10px">http-equiv</h4>
+                        <p style="margin-top:5px">
+                            Used for http response message headers. For example, http-equiv can be used to refresh the page or to set a cookie.
+                            Values include content-type, expires, refresh and set-cookie.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <h3>Specifying Keywords</h3>
+            <p>
+                You can use &lt;meta&gt; tag to specify important keywords related to the document and
+                later these keywords are used by the search engines while indexing your webpage for searching purpose.
+            </p>
+            <h3>Document Description</h3>
+            <p>
+                You can use &lt;meta&gt; tag to give a short description about the document. 
+                This again can be used by various search engines while indexing your webpage for searching purpose.
+            </p>
+            <h3>Document Refreshing</h3>
+            <p>
+                A &lt;meta&gt; tag can be used to specify a duration after which your web page will keep refreshing automatically.
+                If you want your page keep refreshing after every 5 seconds then use the following syntax.
+            </p>
+            <h3>Setting Author Name</h3>
+            <p>You can set an author name in a web page using meta tag. See an example below −</p>
+            <h3>Specify Character Set</h3>
+            <p>You can use &lt;meta&gt; tag to specify character set used within the webpage.</p>
+            <p>Example :- </p>
+            <p>Following is an example, where we are adding HTML, Meta Tags, Metadata as important keywords about the document.</p>
+            <section style="padding:15px;margin:10px;display:block;background-color:ivory;border:1px solid gray">
+                <pre style="font-size: 15px;">
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    
+                    &lt;head&gt;
+                        &lt;title&gt;Meta Tags Example&lt;/title&gt;
+                        &lt;meta name = "keywords" content = "HTML, Meta Tags, Metadata" /&gt;
+                        &lt;meta name = "description" content = "Learning about Meta Tags." /&gt;
+                        &lt;meta http-equiv = "refresh" content = "5" /&gt;
+                        &lt;meta name = "author" content = "Chinmay Mehta" /&gt;
+                        &lt;meta http-equiv = "Content-Type" content = "text/html; charset = UTF-8" /&gt;
+                    &lt;/head&gt;
+                    
+                    &lt;body&gt;
+                        &lt;p&gt;Hello HTML5!&lt;/p&gt;
+                    &lt;/body&gt;
+                    
+                    &lt;/html&gt;    
+                </pre>
+                <a href="../Examples/Meta-Page-Examples/exp35.html" target="_blank" style="background-color:gray;color:white ;padding: 15px;text-decoration: none;">Run Example</a>
+            </section>    
+            <h3>Page Redirection</h3>
+            <p>
+                You can use &lt;meta&gt; tag to redirect your page to any other webpage.
+                You can also specify a duration if you want to redirect the page after a certain number of seconds.
+            </p>
+            <p>Example :- </p>
+            <p>Following is an example, where we are adding HTML, Meta Tags, Metadata as important keywords about the document.</p>
+            <section style="padding:15px;margin:10px;display:block;background-color:ivory;border:1px solid gray">
+                <pre style="font-size: 15px;">
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    
+                    &lt;head&gt;
+                        &lt;title&gt;Meta Tags Example&lt;/title&gt;
+                        &lt;meta name = "keywords" content = "HTML, Meta Tags, Metadata" /&gt;
+                        &lt;meta name = "description" content = "Learning about Meta Tags." /&gt;
+                        &lt;meta http-equiv = "refresh" content = "5;url = https://www.w3schools.com/" /&gt;
+                    &lt;/head&gt;
+                    
+                    &lt;body&gt;
+                        &lt;p&gt;Hello HTML5!&lt;/p&gt;
+                    &lt;/body&gt;
+                    
+                    &lt;/html&gt;    
+                </pre>
+                <a href="../Examples/Meta-Page-Examples/exp36.html" target="_blank" style="background-color:gray;color:white ;padding: 15px;text-decoration: none;">Run Example</a>
+            </section>
+
+            <h3>Setting Cookies</h3>
+            <p>
+                Cookies are data, stored in small text files on your computer and it is exchanged between web browser and 
+                web server to keep track of various information based on your web application need.
+                You can use &lt;meta&gt; tag to store cookies on client side and later this information can be
+                used by the Web Server to track a site visitor.
+            </p>
+            <p>Example :- </p>
+            <p>
+                Following is an example of redirecting current page to another page after 5 seconds. 
+                If you want to redirect page immediately then do not specify content attribute.
+            </p>
+            <p>If you do not include the expiration date and time, the cookie is considered a session cookie and will be deleted when the user exits the browser.</p>
+            <section style="padding:15px;margin:10px;display:block;background-color:ivory;border:1px solid gray">
+                <pre style="font-size: 15px;">
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                       &lt;head&gt;
+                          &lt;title&gt;Meta Tags Example&lt;/title&gt;
+                          &lt;meta http-equiv = "cookie" content = "userid = xyz; expires = Wednesday, 08-Aug-15 23:59:59 GMT;" /&gt;
+                             
+                       &lt;/head&gt;
+                       &lt;body&gt;
+                          &lt;p&gt;Hello HTML5!&lt;/p&gt;
+                       &lt;/body&gt;
+                    &lt;/html&gt;   
+                </pre>
+                <a href="../Examples/Meta-Page-Examples/exp37.html" target="_blank" style="background-color:gray;color:white ;padding: 15px;text-decoration: none;">Run Example</a>
+            </section>
+        </div>
+    </body>
+</html>

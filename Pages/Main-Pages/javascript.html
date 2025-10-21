@@ -1,0 +1,114 @@
+<html>
+    <body>
+        <h1 style="text-align: center;">HTML - Javascript</h1>
+        <div class="javascript">
+            <p>
+                A script is a small piece of program that can add interactivity to your website. 
+                For example, a script could generate a pop-up alert box message, or provide a dropdown menu. 
+                This script could be written using JavaScript or VBScript.
+                <br>
+                You can write various small functions, called event handlers using any of the scripting language and then you can trigger those functions using HTML attributes.
+                <br>
+                You can keep JavaScript code in a separate file and then include it wherever it's needed, or you can define functionality inside HTML document itself. 
+                <br>
+                Let's see both the cases one by one with suitable examples.
+            </p>
+            <h3>External JavaScript</h3>
+            <p>
+                If you are going to define a functionality which will be used in various HTML documents then it's better to keep that functionality 
+                in a separate JavaScript file and then include that file in your HTML documents.
+                A JavaScript file will have extension as .js and it will be included in HTML files using &lt;script&gt; tag.
+            </p>
+            <p>Example :- </p>
+            <p>Consider we define a small function using JavaScript in script.js which has following code −</p>
+            <section style="padding:15px;margin:10px;display:block;background-color:ivory;border:1px solid gray">
+                <pre style="font-size: 15px;">
+                    function Hello() {
+                        alert("Hello, World");
+                     }
+                </pre>
+            </section>
+            <section style="padding:15px;margin:10px;display:block;background-color:ivory;border:1px solid gray">
+                <pre style="font-size: 15px;">
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+
+                    &lt;head&gt;
+                        &lt;title&gt;Javascript External Script&lt;/title&gt;
+                        &lt;script src = "/html/script.js" type = "text/javascript"/&gt;&lt;/script&gt;
+                    &lt;/head&gt;
+
+                    &lt;body&gt;
+                        &lt;input type = "button" onclick = "Hello();" name = "ok" value = "Click Me" /&gt;
+                    &lt;/body&gt;
+
+                    &lt;/html&gt;
+                </pre>
+                <a href="../Examples/Javascript-Page-Examples/exp75.html" target="_blank" style="background-color:gray;color:white ;padding: 15px;text-decoration: none;">Run Example</a>
+            </section>
+            <h3>Internal Script</h3>
+            <p>
+                You can write your script code directly into your HTML document. 
+                Usually we keep script code in header of the document using &lt;script&gt; tag, 
+                otherwise there is no restriction and you can put your source code anywhere in the document but inside &lt;script&gt; tag.
+            </p>
+            <p>Example :- </p>
+            <section style="padding:15px;margin:10px;display:block;background-color:ivory;border:1px solid gray">
+                <pre style="font-size: 15px;">
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+
+                    &lt;head&gt;
+                        &lt;title&gt;JavaScript Internal Script&lt;/title&gt;
+                        &lt;base href = "../../../index.html" /&gt;
+                        
+                        &lt;script type = "text/JavaScript"&gt;
+                            function Hello() {
+                                alert("Hello, World");
+                            }
+                        &lt;/script&gt;
+                    &lt;/head&gt;
+
+                    &lt;body&gt;
+                        &lt;input type = "button" onclick = "Hello();" name = "ok" value = "Click Me" /&gt;
+                    &lt;/body&gt;
+
+                    &lt;/html&gt;
+                </pre>
+                <a href="../Examples/Javascript-Page-Examples/exp76.html" target="_blank" style="background-color:gray;color:white ;padding: 15px;text-decoration: none;">Run Example</a>
+            </section>
+            <h3>Event Handlers</h3>
+            <p>
+                Event handlers are nothing but simply defined functions which can be called against any mouse or keyboard event. 
+                You can define your business logic inside your event handler which can vary from a single to 1000s of line code.
+                <br>
+                Following example explains how to write an event handler. 
+                Let's write one simple function EventHandler() in the header of the document. We will call this function when any user brings mouse over a paragraph
+            </p>
+            <section style="padding:15px;margin:10px;display:block;background-color:ivory;border:1px solid gray">
+                <pre style="font-size: 15px;">
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    
+                       &lt;head&gt;
+                          &lt;title&gt;Event Handlers Example&lt;/title&gt;
+                          &lt;base href = "https://www.tutorialspoint.com/" /&gt;
+                          
+                          &lt;script type = "text/JavaScript"&gt;
+                             function EventHandler() {
+                                alert("I'm event handler!!");
+                             }
+                          &lt;/script&gt;
+                       &lt;/head&gt;
+                    
+                       &lt;body&gt;
+                          &lt;p onmouseover = "EventHandler();"&gt;Bring your mouse here to see an alert&lt;/p&gt;
+                       &lt;/body&gt;
+                    
+                    &lt;/html&gt;
+                </pre>
+                <a href="../Examples/Javascript-Page-Examples/exp77.html" target="_blank" style="background-color:gray;color:white ;padding: 15px;text-decoration: none;">Run Example</a>
+            </section>
+        </div>
+    </body>
+</html>

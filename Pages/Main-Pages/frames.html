@@ -1,0 +1,183 @@
+<html>
+    <body>
+        <h1 style="text-align: center;">HTML - Frames</h1>
+        <p>
+            HTML frames are used to divide your browser window into multiple sections where each section can load a separate HTML document. 
+            A collection of frames in the browser window is known as a frameset.
+            The window is divided into frames in a similar way the tables are organized: into rows and columns.
+        </p>
+        <h3>Disadvantages of Frames</h3>
+        <p>There are few drawbacks with using frames, so it's never recommended to use frames in your webpages −</p>
+        <ul type="square">
+            <li>Some smaller devices cannot cope with frames often because their screen is not big enough to be divided up.</li>
+            <br>
+            <li>Sometimes your page will be displayed differently on different computers due to different screen resolution.</li>
+            <br>
+            <li>The browser's back button might not work as the user hopes.</li>
+            <br>
+            <li>There are still few browsers that do not support frame technology.</li>
+        </ul>
+        <h3>Creating Frames</h3>
+        <p>
+            To use frames on a page we use &lt;frameset&gt; tag instead of &lt;body&gt; tag. The &lt;frameset&gt; tag defines, how to divide the window into frames.
+            The rows attribute of &lt;frameset&gt; tag defines horizontal frames and cols attribute defines vertical frames. 
+            Each frame is indicated by &lt;frame&gt; tag and it defines which HTML document shall open into the frame.
+        </p>
+        <h3>The &lt;frameset&gt; Tag Attributes</h3>
+        <p>Following are important attributes of the &lt;frameset&gt; tag −</p>
+        <table style="width: 50%;border: 1px solid black; border-collapse: collapse;" align="center">
+            <tr style="border: 1px solid black;border-collapse: collapse;">
+                <th style="border: 1px solid black;width:15%;padding:10px;"> Sr.No</th>
+                <th style="padding:10px">Atrribute & Description</th>
+            </tr>
+            <tr style="border: 1px solid black;">
+                <td style="border: 1px solid black; text-align: center;" class="col-1">1</td>
+                <td class="col-2" style="padding:10px">
+                    <h4 style="margin-bottom:10px">cols</h4>
+                    <p style="margin-top:5px;">
+                        Specifies how many columns are contained in the frameset and the size of each column. 
+                        You can specify the width of each column in one of the four ways −
+                        <br>
+                        Absolute values in pixels. For example, to create three vertical frames, use cols = "100, 500, 100".
+                        <br>
+                        A percentage of the browser window. For example, to create three vertical frames, use cols = "10%, 80%, 10%".
+                        <br>
+                        Using a wildcard symbol. 
+                        For example, to create three vertical frames, use cols = "10%, *, 10%". In this case wildcard takes remainder of the window.
+                        <br>
+                        As relative widths of the browser window. For example, to create three vertical frames, use cols = "3*, 2*, 1*".
+                        This is an alternative to percentages. You can use relative widths of the browser window. 
+                        Here the window is divided into sixths: the first column takes up half of the window, the second takes one third, and the third takes one sixth.    
+                    </p>
+                </td>
+            </tr>
+            <tr style="border: 1px solid black;">
+                <td class="col-1" style="border: 1px solid black;text-align: center;">2</td>
+                <td class="col-2" style="padding:10px">
+                    <h4 style="margin-bottom:10px">rows</h4>
+                    <p style="margin-top:5px;">
+                        This attribute works just like the cols attribute and takes the same values, but it is used to specify the rows in the frameset. 
+                        For example, to create two horizontal frames, use rows = "10%, 90%". 
+                        You can specify the height of each row in the same way as explained above for columns.
+                    </p>
+                </td>
+            </tr>
+            <tr style="border: 1px solid black;">
+                <td class="col-1" style="border: 1px solid black; text-align: center;">3</td>
+                <td class="col-2" style="padding:10px">
+                    <h4 style="margin-bottom:10px">border</h4>
+                    <p style="margin-top:5px">This attribute specifies the width of the border of each frame in pixels. For example, border = "5". A value of zero means no border.</p>
+                </td>
+            </tr>
+            <tr style="border: 1px solid black;">
+                <td class="col-1" style="border: 1px solid black;text-align: center;">4</td>
+                <td class="col-2" style="padding:10px">
+                    <h4 style="margin-bottom:10px">frameborder</h4>
+                    <p style="margin-top:5px">
+                        This attribute specifies whether a three-dimensional border should be displayed between frames. 
+                        This attribute takes value either 1 (yes) or 0 (no). For example frameborder = "0" specifies no border.
+                    </p>
+                </td>
+            </tr>
+            <tr style="border: 1px solid black;">
+                <td class="col-1" style="border: 1px solid black;text-align: center;">5</td>
+                <td class="col-2" style="padding:10px">
+                    <h4 style="margin-bottom:10px">framespacing</h4>
+                    <p style="margin-top:5px">
+                        This attribute specifies the amount of space between frames in a frameset. This can take any integer value.
+                        For example framespacing = "10" means there should be 10 pixels spacing between each frames.
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <h3>The &lt;frame&gt; Tag Attributes</h3>
+        <p>Following are the important attributes of &lt;frame&gt; tag −</p>
+        <table style="width: 50%;border: 1px solid black; border-collapse: collapse;" align="center">
+            <tr style="border: 1px solid black;border-collapse: collapse;">
+                <th style="border: 1px solid black;width:15%;padding:10px;"> Sr.No</th>
+                <th style="padding:10px">Atrribute & Description</th>
+            </tr>
+            <tr style="border: 1px solid black;">
+                <td style="border: 1px solid black; text-align: center;" class="col-1">1</td>
+                <td class="col-2" style="padding:10px">
+                    <h4 style="margin-bottom:10px">src</h4>
+                    <p style="margin-top:5px;">
+                        This attribute is used to give the file name that should be loaded in the frame.
+                        Its value can be any URL. For example, src = "/html/top_frame.htm" will load an HTML file available in html directory.
+                    </p>
+                </td>
+            </tr>
+            <tr style="border: 1px solid black;">
+                <td class="col-1" style="border: 1px solid black;text-align: center;">2</td>
+                <td class="col-2" style="padding:10px">
+                    <h4 style="margin-bottom:10px">name</h4>
+                    <p style="margin-top:5px;">
+                        This attribute allows you to give a name to a frame. It is used to indicate which frame a document should be loaded into.
+                        This is especially important when you want to create links in one frame that load pages into an another frame, in which case the second frame needs a name to identify itself as the target of the link.
+                    </p>
+                </td>
+            </tr>
+            <tr style="border: 1px solid black;">
+                <td class="col-1" style="border: 1px solid black;text-align: center;">3</td>
+                <td class="col-2" style="padding:10px">
+                    <h4 style="margin-bottom:10px">frameborder</h4>
+                    <p style="margin-top:5px">
+                        This attribute specifies whether a three-dimensional border should be displayed between frames. 
+                        This attribute takes value either 1 (yes) or 0 (no). For example frameborder = "0" specifies no border.
+                    </p>
+                </td>
+            </tr>
+            <tr style="border: 1px solid black;">
+                <td class="col-1" style="border: 1px solid black;text-align: center;">4</td>
+                <td class="col-2" style="padding:10px">
+                    <h4 style="margin-bottom:10px">marginwidth</h4>
+                    <p style="margin-top:5px">
+                        This attribute allows you to specify the width of the space between the left and right of the frame's borders and the frame's content.
+                        The value is given in pixels. For example marginwidth = "10".
+                    </p>
+                </td>
+            </tr>
+            <tr style="border: 1px solid black;">
+                <td class="col-1" style="border: 1px solid black; text-align: center;">5</td>
+                <td class="col-2" style="padding:10px">
+                    <h4 style="margin-bottom:10px">marginheight</h4>
+                    <p style="margin-top:5px">
+                        This attribute allows you to specify the height of the space between the top and bottom of the frame's borders and its contents.
+                        The value is given in pixels. For example marginheight = "10".
+                    </p>
+                </td>
+            </tr>
+            <tr style="border: 1px solid black;">
+                <td class="col-1" style="border: 1px solid black; text-align: center;">6</td>
+                <td class="col-2" style="padding:10px">
+                    <h4 style="margin-bottom:10px">noresize</h4>
+                    <p style="margin-top:5px">
+                        By default, you can resize any frame by clicking and dragging on the borders of a frame. 
+                        The noresize attribute prevents a user from being able to resize the frame. For example noresize = "noresize".
+                    </p>
+                </td>
+            </tr>
+            <tr style="border: 1px solid black;">
+                <td class="col-1" style="border: 1px solid black; text-align: center;">7</td>
+                <td class="col-2" style="padding:10px">
+                    <h4 style="margin-bottom:10px">scrolling</h4>
+                    <p style="margin-top:5px">
+                        This attribute controls the appearance of the scrollbars that appear on the frame. This takes values either "yes", "no" or "auto". 
+                        For example scrolling = "no" means it should not have scroll bars.
+                    </p>
+                </td>
+            </tr>
+            <tr style="border: 1px solid black;">
+                <td class="col-1" style="border: 1px solid black; text-align: center;">8</td>
+                <td class="col-2" style="padding:10px">
+                    <h4 style="margin-bottom:10px">longdesc</h4>
+                    <p style="margin-top:5px">
+                        This attribute allows you to provide a link to another page containing a long description of the contents of the frame. 
+                        For example longdesc = "framedescription.htm"
+                    </p>
+                </td>
+            </tr>
+        </table>
+        
+    </body>
+</html>

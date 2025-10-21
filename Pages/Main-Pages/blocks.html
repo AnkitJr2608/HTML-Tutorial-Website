@@ -1,0 +1,103 @@
+<html>
+    <body>
+        <h1 style="text-align: center;">HTML - Blocks</h1>
+        <div class="blocks">
+            All the HTML elements can be categorized into two categories :-
+            <ol type="a">
+                <li>Block Level Elements</li>
+                <li>Inline Elements</li>.
+            </ol>
+            <h3>Block Elements</h3>
+            <p>
+                Block elements appear on the screen as if they have a line break before and after them. 
+                For example, the &lt;p&gt;, &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;, &lt;ul&gt;, &lt;ol&gt;, &lt;dl&gt;, &lt;pre&gt;, &lt;hr /&gt;, &lt;blockquote&gt;, and &lt;address&gt; elements are all block level elements.
+                They all start on their own new line, and anything that follows them appears on its own new line.
+            </p>
+            <h3>Inline Elements</h3>
+            <p>
+                Inline elements, on the other hand, can appear within sentences and do not have to appear on a new line of their own. 
+                The &lt;b&gt;, &lt;i&gt;, &lt;u&gt;, &lt;em&gt;, &lt;strong&gt;, &lt;sup&gt;, &lt;sub&gt;, &lt;big&gt;, &lt;small&gt;, &lt;li&gt;, &lt;ins&gt;, &lt;del&gt;, &lt;code&gt;, &lt;cite&gt;, &lt;dfn&gt;, &lt;kbd&gt;, and &lt;var&gt; elements are all inline elements.
+            </p>
+            <h3>Grouping HTML Elements</h3>
+            <p>There are two important tags which we use very frequently to group various other HTML tags :- </p>
+            <ol type="i">
+                <li>&lt;div&gt; tag</li>
+                <li>&lt;span&gt; tag</li> 
+            </ol>
+            <h3>The &lt;div&gt; tag</h3>
+            <p>
+                This is the very important block level tag which plays a big role in grouping various other HTML tags and applying CSS on group of elements. 
+                Even now &lt;div&gt; tag can be used to create webpage layout where we define different parts (Left, Right, Top etc.) of the page using &lt;div&gt; tag. 
+                This tag does not provide any visual change on the block but this has more meaning when it is used with CSS.
+            </p>
+            <p>Example :-</p>
+            <section style="padding:15px;margin:10px;display:block;background-color:ivory;border:1px solid gray">
+                <pre style="font-size: 15px;">
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    
+                    &lt;head&gt;
+                        &lt;title&gt;HTML div Tag&lt;/title&gt;
+                    &lt;/head&gt;
+                        
+                    &lt;body&gt;
+                        &lt;!-- First group of tags --&gt;
+                        &lt;div style = "color:red"&gt;
+                            &lt;h4&gt;This is first group&lt;/h4&gt;
+                            &lt;p&gt;Following is a list of vegetables&lt;/p&gt;
+                            
+                            &lt;ul&gt;
+                                &lt;li&gt;Beetroot&lt;/li&gt;
+                                &lt;li&gt;Ginger&lt;/li&gt;
+                                &lt;li&gt;Potato&lt;/li&gt;
+                                &lt;li&gt;Radish&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/div&gt;
+
+                        &lt;!-- Second group of tags --&gt;
+                        &lt;div style = "color:green"&gt;
+                            &lt;h4&gt;This is second group&lt;/h4&gt;
+                            &lt;p&gt;Following is a list of fruits&lt;/p&gt;
+                            
+                            &lt;ul&gt;
+                                &lt;li&gt;Apple&lt;/li&gt;
+                                &lt;li&gt;Banana&lt;/li&gt;
+                                &lt;li&gt;Mango&lt;/li&gt;
+                                &lt;li&gt;Strawberry&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/div&gt;
+                    </body>
+                    
+                    </html>
+                </pre>
+                <a href="../Examples/Blocks-Page-Examples/exp57.html" target="_blank" style="background-color:gray;color:white ;padding: 15px;text-decoration: none;">Run Example</a>
+            </section>
+            <h3>The &lt;span&gt; tag</h3>
+            <p>
+                The HTML &lt;span&gt; is an inline element and it can be used to group inline-elements in an HTML document. 
+                This tag also does not provide any visual change on the block but has more meaning when it is used with CSS.
+                <br>
+                The difference between the &lt;span&gt; tag and the &lt;div&gt; tag is that the &lt;span&gt; tag is used with inline elements whereas the &lt;div&gt; tag is used with block-level elements.
+            </p>
+            <p>Example :-</p>
+            <section style="padding:15px;margin:10px;display:block;background-color:ivory;border:1px solid gray">
+                <pre style="font-size: 15px;">
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+
+                    &lt;head&gt;
+                        &lt;title&gt;HTML span Tag&lt;/title&gt;
+                    &lt;/head&gt;
+                        
+                    &lt;body&gt;
+                        &lt;p&gt;This is &lt;span style = "color:red"&gt;red&lt;/span&gt; and this is
+                            &lt;span style = "color:green"&gt;green&lt;/span&gt;&lt;/p&gt;
+                    &lt;/body&gt;
+                        
+                    &lt;/html&gt;
+                </pre>
+                <a href="../Examples/Blocks-Page-Examples/exp58.html" target="_blank" style="background-color:gray;color:white ;padding: 15px;text-decoration: none;">Run Example</a>
+            </section>
+        </div>
+    </body>
+</html>

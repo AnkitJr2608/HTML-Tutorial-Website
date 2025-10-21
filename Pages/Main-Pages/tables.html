@@ -1,0 +1,187 @@
+<html>
+    <body>
+        <h1 style="text-align: center;">HTML - Tables</h1>
+        <p>
+            The HTML tables allow web authors to arrange data like text, images, links, other tables, etc. into rows and columns of cells.
+            The HTML tables are created using the &lt;table&gt; tag in which the &lt;tr&gt; tag is used to create table rows and &lt;td&gt; tag is used to create data cells.
+            The elements under &lt;td&gt; are regular and left aligned by default.
+        </p>
+        <p>Example :- </p>
+        <section style="padding:15px;margin:10px;display:block;background-color:ivory;border:1px solid gray">            
+            <pre style="font-size: 15px;">
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+
+                &lt;head&gt;
+                    &lt;title&gt;HTML Tables&lt;/title&gt;
+                &lt;/head&gt;
+                    
+                &lt;body&gt;
+                    &lt;table border = "1"&gt;
+                        &lt;tr&gt;
+                            &lt;td&gt;Row 1, Column 1&lt;/td&gt;
+                            &lt;td&gt;Row 1, Column 2&lt;/td&gt;
+                        &lt;/tr&gt;
+                        
+                        &lt;tr&gt;
+                            &lt;td&gt;Row 2, Column 1&lt;/td&gt;
+                            &lt;td&gt;Row 2, Column 2&lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/table&gt;
+                    
+                &lt;/body&gt;
+                &lt;/html&gt;
+            </pre>
+            <a href="../Examples/Table-Page-Examples/exp42.html" target="_blank" style="background-color:gray;color:white ;padding: 15px;text-decoration: none;">Run Examples</a>
+        </section>
+        <h3>Table Heading</h3>
+        <p>
+            Table heading can be defined using &lt;th&gt; tag. This tag will be put to replace &lt;td&gt; tag, which is used to represent actual data cell.
+             Normally you will put your top row as table heading as shown below, otherwise you can use &lt;th&gt; element in any row. Headings, which are defined in &lt;th&gt; tag are centered and bold by default.
+        </p>
+        <h3>Cellpadding and Cellspacing Attributes</h3>
+        <p>
+            There are two attributes called cellpadding and cellspacing which you will use to adjust the white space in your table cells. 
+            The cellspacing attribute defines space between table cells, while cellpadding represents the distance between cell borders and the content within a cell.
+        </p>
+        <p>Example :- </p>
+        <section style="padding:15px;margin:10px;display:block;background-color:ivory;border:1px solid gray">
+            <pre style="font-size: 15px;">
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                
+                   &lt;head&gt;
+                      &lt;title&gt;HTML Table Header&lt;/title&gt;
+                   &lt;/head&gt;
+                    
+                   &lt;body&gt;
+                      &lt;table border = "1" cellpadding = "5" cellspacing = "5"&gt;
+                         &lt;tr&gt;
+                            &lt;th&gt;Name&lt;/th&gt;
+                            &lt;th&gt;Salary&lt;/th&gt;
+                         &lt;/tr&gt;
+                         &lt;tr&gt;
+                            &lt;td&gt;Ramesh Raman&lt;/td&gt;
+                            &lt;td&gt;5000&lt;/td&gt;
+                         &lt;/tr&gt;
+                         
+                         &lt;tr&gt;
+                            &lt;td&gt;Shabbir Hussein&lt;/td&gt;
+                            &lt;td&gt;7000&lt;/td&gt;
+                         &lt;/tr&gt;
+                      &lt;/table&gt;
+                   &lt;/body&gt;
+                   
+                &lt;/html&gt;
+            </pre>
+            <a href="../Examples/Table-Page-Examples/exp43.html" target="_blank" style="background-color:gray;color:white ;padding: 15px;text-decoration: none;">Run Examples</a>
+        </section>
+        <h3>Colspan and Rowspan Attributes</h3>
+       <p>
+           You will use colspan attribute if you want to merge two or more columns into a single column.
+            Similar way you will use rowspan if you want to merge two or more rows.
+        </p>
+        <h3>Table Height and Width</h3>
+        <p>
+            You can set a table width and height using width and height attributes. 
+            You can specify table width or height in terms of pixels or in terms of percentage of available screen area.
+        </p>
+        <p>Example :- </p>
+        <section style="padding:15px;margin:10px;display:block;background-color:ivory;border:1px solid gray">
+            <pre style="font-size: 15px;">
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                
+                   &lt;head&gt;
+                      &lt;title&gt;HTML Table Colspan/Rowspan&lt;/title&gt;
+                   &lt;/head&gt;
+                    
+                   &lt;body&gt;
+                      &lt;table border = "1" width = "400" height = "150"&gt;
+                      &lt;tr&gt;
+                      &lt;td&gt;Row 1, Column 1&lt;/td&gt;
+                      &lt;td&gt;Row 1, Column 2&lt;/td&gt;
+                  &lt;/tr&gt;
+                  
+                  &lt;tr&gt;
+                      &lt;td&gt;Row 2, Column 1&lt;/td&gt;
+                      &lt;td&gt;Row 2, Column 2&lt;/td&gt;
+                  &lt;/tr&gt;
+                      &lt;/table&gt;
+                   &lt;/body&gt;
+                &lt;/html&gt;
+            </pre>
+            <a href="../Examples/Table-Page-Examples/exp44.html" target="_blank" style="background-color:gray;color:white ;padding: 15px;text-decoration: none;">Run Examples</a>'
+        </section>
+        <h3>Table Caption</h3>
+        <p>The caption tag will serve as a title or explanation for the table and it shows up at the top of the table.</p>
+        <p>Example :-</p>
+        <section style="padding:15px;margin:10px;display:block;background-color:ivory;border:1px solid gray">
+            <pre style="font-size: 15px;">
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+
+                &lt;head&gt;
+                    &lt;title&gt;HTML Table Caption&lt;/title&gt;
+                &lt;/head&gt;
+                    
+                &lt;body&gt;
+                    &lt;table border = "1" width = "100%"&gt;
+                        &lt;caption&gt;This is the caption&lt;/caption&gt;
+                        
+                        &lt;tr&gt;
+                            &lt;td&gt;row 1, column 1&lt;/td&gt;&lt;td&gt;row 1, columnn 2&lt;/td&gt;
+                        &lt;/tr&gt;
+                        
+                        &lt;tr&gt;
+                            &lt;td&gt;row 2, column 1&lt;/td&gt;&lt;td&gt;row 2, columnn 2&lt;/td&gt;
+                        &lt;/tr&gt;
+                    &lt;/table&gt;
+                &lt;/body&gt;
+                    
+                &lt;/html&gt;
+            </pre>
+            <a href="../Examples/Table-Page-Examples/exp45.html" target="_blank" style="background-color:gray;color:white ;padding: 15px;text-decoration: none;">Run Examples</a>
+        </section>
+        <h3>Nested Tables</h3>
+        <p>You can use one table inside another table. Not only tables you can use almost all the tags inside table data tag &lt;td&gt;.</p>
+        <section style="padding:15px;margin:10px;display:block;background-color:ivory;border:1px solid gray">
+            <pre style="font-size: 15px;">
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+
+                &lt;head&gt;
+                    &lt;title&gt;HTML Table&lt;/title&gt;
+                &lt;/head&gt;
+                
+                &lt;body&gt;
+                    &lt;table border = "1" width = "100%"&gt;
+                    
+                        &lt;tr&gt;
+                            &lt;td&gt;
+                            &lt;table border = "1" width = "100%"&gt;
+                                &lt;tr&gt;
+                                    &lt;th&gt;Name&lt;/th&gt;
+                                    &lt;th&gt;Salary&lt;/th&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td&gt;Ankit&lt;/td&gt;
+                                    &lt;td&gt;5000&lt;/td&gt;
+                                &lt;/tr&gt;
+                                &lt;tr&gt;
+                                    &lt;td&gt;Ashutosh&lt;/td&gt;
+                                    &lt;td&gt;7000&lt;/td&gt;
+                                &lt;/tr&gt;
+                            &lt;/table&gt;
+                            &lt;/td&gt;
+                        &lt;/tr&gt;
+
+                    &lt;/table&gt;
+                &lt;/body&gt;
+                
+                &lt;/html&gt;
+            </pre>
+            <a href="../Examples/Table-Page-Examples/exp46.html" target="_blank" style="background-color:gray;color:white ;padding: 15px;text-decoration: none;">Run Example</a>
+        </section>
+    </body>
+</html>

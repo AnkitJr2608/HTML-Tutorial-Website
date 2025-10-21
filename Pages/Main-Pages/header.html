@@ -1,0 +1,93 @@
+<html>
+    <body>
+        <h1>HTML - Header</h1>
+        <div class="header">
+            We have learnt that a typical HTML document will have following structure −
+            <section style="padding:15px;margin:10px;display:block;background-color:ivory;border:1px solid gray">
+                <pre>
+                    Document declaration tag 
+                    &lt;html&gt;
+                    
+                    &lt;head&gt;
+                        Document header related tags
+                    &lt;/head&gt;
+
+                    &lt;body&gt;
+                        Document body related tags
+                    &lt;/body&gt;
+                    
+                    &lt;/html&gt;
+                </pre>
+            </section>
+            <h3>The HTML &lt;title&gt; Tag</h3>
+            <p>
+                The HTML &lt;title&gt; tag is used for specifying the title of the HTML document. 
+                Following is an example to give a title to an HTML document −
+            </p>
+            <h3>The HTML &lt;link&gt; Tag</h3>
+            <p>
+                The HTML &lt;link&gt; tag is used to specify relationships between the current document and external resource.
+                Following is an example to link an external style sheet file available in css sub-directory within web root −
+            </p>
+            <h3>The HTML &lt;style&gt; Tag</h3>
+            <p>
+                The HTML &lt;style&gt; tag is used to specify style sheet for the current HTML document. 
+                Following is an example to define few style sheet rules inside &lt;style&gt; tag −
+            </p>
+            <section style="padding:15px;margin:10px;display:block;background-color:ivory;border:1px solid gray">
+                <pre>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    
+                       &lt;head&gt;
+                          &lt;title&gt;HTML style Tag Example&lt;/title&gt;
+                          &lt;base href = "../../../index.html" /&gt;
+                          
+                          &lt;style type = "text/css"&gt;
+                             .myclass {
+                                background-color: #aaa;
+                                padding: 10px;
+                             }
+                          &lt;/style&gt;
+                       &lt;/head&gt;
+                        
+                       &lt;body&gt;
+                          &lt;p class = "myclass"&gt;Hello, World!&lt;/p&gt;
+                       &lt;/body&gt;
+                    
+                    &lt;/html&gt;
+                </pre>
+                <a href="../Examples/Header-Page-Examples/exp69.html" target="_blank" style="background-color:gray;color:white ;padding: 15px;text-decoration: none;">Run Example</a>
+            </section>
+            <h3>The HTML &lt;script&gt; Tag</h3>
+            <p>
+                The HTML &lt;script&gt; tag is used to include either external script file or to define internal script for the HTML document. 
+               Following is an example where we are using JavaScript to define a simple JavaScript function −
+            </p>
+            <section style="padding:15px;margin:10px;display:block;background-color:ivory;border:1px solid gray">
+                <pre>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+
+                    &lt;head&gt;
+                        &lt;title&gt;HTML script Tag Example&lt;/title&gt;
+                        &lt;base href = "http://www.tutorialspoint.com/" /&gt;
+                        
+                        &lt;script type = "text/JavaScript"&gt;
+                            function Hello() {
+                                alert("Hello, World");
+                            }
+                        &lt;/script&gt;
+                    &lt;/head&gt;
+
+                    &lt;body&gt;
+                        &lt;input type = "button" onclick = "Hello();" name = "ok" value = "OK"  /&gt;
+                    &lt;/body&gt;
+
+                    &lt;/html&gt;
+                </pre>
+                <a href="../Examples/Header-Page-Examples/exp70.html" target="_blank" style="background-color:gray;color:white ;padding: 15px;text-decoration: none;">Run Example</a>
+            </section>
+        </div>
+    </body>
+</html>

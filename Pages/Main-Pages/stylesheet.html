@@ -1,0 +1,153 @@
+<html>
+    <body>
+        <h1 style="text-align: center;">HTML - Style Sheet</h1>
+        <div class="style-sheet">
+            <p>
+                Cascading Style Sheets (CSS) describe how documents are presented on screens, in print, or perhaps how they are pronounced.
+                W3C has actively promoted the use of style sheets on the Web since the consortium was founded in 1994.
+                <br>
+                Cascading Style Sheets (CSS) provide easy and effective alternatives to specify various attributes for the HTML tags. 
+                Using CSS, you can specify a number of style properties for a given HTML element. Each property has a name and a value, separated by a colon (:).
+                Each property declaration is separated by a semi-colon (;).
+            </p>
+            <p>Example :- </p>
+            <section style="padding:15px;margin:10px;display:block;background-color:ivory;border:1px solid gray">
+                <pre style="font-size: 15px;">
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    
+                       &lt;head&gt;
+                          &lt;title&gt;HTML CSS&lt;/title&gt;
+                       &lt;/head&gt;
+                    
+                       &lt;body&gt;
+                          &lt;p style = "color:green; font-size:24px;" &gt;Hello, World!&lt;/p&gt;
+                       &lt;/body&gt;
+                    
+                    &lt;/html&gt;
+                </pre>
+                <a href="../Examples/Style-Sheet-Page-Examples/exp71.html" target="_blank" style="background-color:gray;color:white ;padding: 15px;text-decoration: none;">Run Example</a>
+            </section>
+            <p>You can use CSS in three ways in your HTML document −</p>
+            <ul type="square">
+                <li><b>External Style Sheet</b>− Define style sheet rules in a separate .css file and then include that file in your HTML document using HTML &lt;link&gt; tag.</li>
+                <li><b>Internal Style Sheet</b>− Define style sheet rules in header section of the HTML document using &lt;style&gt; tag.</li>
+                <li><b>Inline Style Sheet</b>− Define style sheet rules directly along-with the HTML elements using style attribute.</li>
+            </ul>
+            <h3>External Style Sheet</h3>
+            <p>
+                If you need to use your style sheet to various pages, then its always recommended to define a common style sheet in a separate file. 
+                A cascading style sheet file will have extension as .css and it will be included in HTML files using &lt;link&gt; tag.
+            </p>
+            <p>Example :- </p>
+            <p>
+                Consider we define a style sheet file style.css which has following rules −
+                <pre style="padding:15px;margin:10px;display:block;background-color:ivory;border:1px solid gray;font-size:15px;">
+                    .red {
+                        color: red;
+                        }
+                        .thick {
+                        font-size:20px;
+                        }
+                        .green {
+                        color:green;
+                        }
+                </pre>
+            </p>
+            <p>
+                Here we defined three CSS rules which will be applicable to three different classes defined for the HTML tags. 
+                I suggest you should not bother about how these rules are being defined because you will learn them while studying CSS. 
+                Now let's make use of the above external CSS file in our following HTML document −
+            </p>
+            <section style="padding:15px;margin:10px;display:block;background-color:ivory;border:1px solid gray">
+                <pre style="font-size: 15px;">
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+
+                    &lt;head&gt;
+                        &lt;title&gt;HTML External CSS&lt;/title&gt;
+                        &lt;link rel = "stylesheet" type = "text/css" href = "/html/style.css"&gt;
+                    &lt;/head&gt;
+
+                    &lt;body&gt;
+                        &lt;p class = "red"&gt;This is red&lt;/p&gt;
+                        &lt;p class = "thick"&gt;This is thick&lt;/p&gt;
+                        &lt;p class = "green"&gt;This is green&lt;/p&gt;
+                        &lt;p class = "thick green"&gt;This is thick and green&lt;/p&gt;
+                    &lt;/body&gt;
+
+                    &lt;/html&gt;
+                </pre>
+                <a href="../Examples/Style-Sheet-Page-Examples/exp72.html" target="_blank" style="background-color:gray;color:white ;padding: 15px;text-decoration: none;">Run Example</a>
+            </section>
+            <h3>Internal Style Sheet</h3>
+            <p>
+                If you want to apply Style Sheet rules to a single document only, then you can include those rules in header section of the HTML document using &lt;style&gt; tag.
+                <br>
+                Rules defined in internal style sheet overrides the rules defined in an external CSS file.
+            </p>
+            <p>Example :- </p>
+            <section style="padding:15px;margin:10px;display:block;background-color:ivory;border:1px solid gray">
+                <pre style="font-size: 15px;">
+                    &lt;!DOCTYPE html&gt; 
+                    &lt;html&gt;
+                    
+                    &lt;head&gt; 
+                        &lt;title&gt;HTML Internal CSS&lt;/title&gt; 
+                        
+                        &lt;style type = "text/css"&gt; 
+                            .red { 
+                                color: red; 
+                            } 
+                            .thick{ 
+                                font-size:20px; 
+                            } 
+                            .green { 
+                                color:green; 
+                            } 
+                        &lt;/style&gt; 
+                    &lt;/head&gt;
+                        
+                    &lt;body&gt; 
+                        &lt;p class = "red"&gt;This is red&lt;/p&gt;  
+                        &lt;p class = "thick"&gt;This is thick&lt;/p&gt;  
+                        &lt;p class = "green"&gt;This is green&lt;/p&gt;  
+                        &lt;p class = "thick green"&gt;This is thick and green&lt;/p&gt; 
+                    &lt;/body&gt;
+                        
+                    &lt;/html&gt;
+                </pre>
+                <a href="../Examples/Style-Sheet-Page-Examples/exp73.html" target="_blank" style="background-color:gray;color:white ;padding: 15px;text-decoration: none;">Run Example</a>
+            </section>
+            <h3>Inline Style Sheet</h3>
+            <p>
+                You can apply style sheet rules directly to any HTML element using style attribute of the relevant tag.
+                <br> 
+                This should be done only when you are interested to make a particular change in any HTML element only.
+                <br>
+                Rules defined inline with the element overrides the rules defined in an external CSS file as well as the rules defined in &lt;style&gt; element.
+            </p>
+            <p>Example :- </p>
+            <section style="padding:15px;margin:10px;display:block;background-color:ivory;border:1px solid gray">
+                <pre style="font-size: 15px;">
+                    &lt;!DOCTYPE html&gt; 
+                    &lt;html&gt;
+                     
+                       &lt;head&gt; 
+                          &lt;title&gt;HTML Inline CSS&lt;/title&gt; 
+                       &lt;/head&gt;
+                     
+                       &lt;body&gt; 
+                          &lt;p style = "color:red;"&gt;This is red&lt;/p&gt;  
+                          &lt;p style = "font-size:20px;"&gt;This is thick&lt;/p&gt;  
+                          &lt;p style = "color:green;"&gt;This is green&lt;/p&gt;  
+                          &lt;p style = "color:green;font-size:20px;"&gt;This is thick and green&lt;/p&gt; 
+                       &lt;/body&gt;
+                     
+                    &lt;/html&gt;
+                </pre>
+                <a href="../Examples/Style-Sheet-Page-Examples/exp74.html" target="_blank" style="background-color:gray;color:white ;padding: 15px;text-decoration: none;">Run Example</a>
+            </section>
+        </div>
+    </body>
+</html>

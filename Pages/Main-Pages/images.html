@@ -1,0 +1,80 @@
+<html>
+    <body>
+        <h1 style="text-align: center;">HTML - Images</h1>
+        <div class="images">
+            <p>
+                Images are very important to beautify as well as to depict many complex concepts in simple way on your web page. 
+                This tutorial will take you through simple steps to use images in your web pages.
+            </p>
+            <h3>Insert Image</h3>
+            <p>
+                You can insert any image in your web page by using &lt;img&gt; tag.
+                Following is the simple syntax to use this tag.
+                &lt;img src = "Image URL" ... attributes-list/&gt;
+                The &lt;img&gt; tag is an empty tag, which means that, it can contain only list of attributes and it has no closing tag.
+                You can use PNG, JPEG or GIF image file based on your comfort but make sure you specify correct image file name in src attribute.
+                Image name is always case sensitive.
+                The alt attribute is a mandatory attribute which specifies an alternate text for an image, if the image cannot be displayed.
+            </p>
+            <h3>Set Image Location</h3>
+            <p>
+                Usually we keep all the images in a separate directory. 
+                Therefor create a directory names a images and keep all images of required by your document there.
+            </p>
+            <p>Example :- </p>
+            <section style="padding:15px;margin:10px;display:block;background-color:ivory;border:1px solid gray">       
+                <pre style="font-size: 15px;">
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+
+                    &lt;head&gt;
+                        &lt;title&gt;Using Image in Webpage&lt;/title&gt;
+                    &lt;/head&gt;
+                        
+                    &lt;body&gt;
+                        &lt;p&gt;Simple Image Insert&lt;/p&gt;
+                        &lt;img src = "../../../images/head-logo.png" alt = "Test Image" /&gt;
+                    &lt;/body&gt;
+                        
+                    &lt;/html&gt;
+                </pre>
+                <a href="../Examples/Images-Page-Examples/exp38.html" target="_blank" style="background-color:gray;color:white ;padding: 15px;text-decoration: none;">Run Example</a>
+            </section>
+            <h3>Set Image Width/Height</h3>
+            <p>
+                You can set image width and height based on your requirement using width and height attributes.
+                You can specify width and height of the image in terms of either pixels or percentage of its actual size.
+            </p>
+            <h3>Set Image Border</h3>
+            <p>
+                By default, image will have a border around it, you can specify border thickness in terms of pixels using border attribute. 
+                A thickness of 0 means, no border around the picture.
+            </p>
+            <h3>Set Image Alignment</h3>
+            <p>
+                By default, image will align at the left side of the page, but you can use align attribute to set it in the center or right.
+            </p>
+
+            <p>Example :- </p>
+            <section style="padding:15px;margin:10px;display:block;background-color:ivory;border:1px solid gray">
+                <pre style="font-size: 15px;">
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+
+                    &lt;head&gt;
+                        &lt;title&gt;Set Image Width and Height&lt;/title&gt;
+                    &lt;/head&gt;
+                        
+                    &lt;body&gt;
+                        &lt;p&gt;Simple Image Insert&lt;/p&gt;
+                        &lt;img src = "../../../images/head-logo.png" alt = "Test Image" width = "150" height = "100" border="3" align = "right"/&gt;
+                    &lt;/body&gt;
+                        
+                    &lt;/html&gt;
+                </pre>
+                <a href="../Examples/Images-Page-Examples/exp39.html" target="_blank" style="background-color:gray;color:white ;padding: 15px;text-decoration: none;">Run Example</a>
+            </section>
+            
+        </div>
+    </body>
+</html>

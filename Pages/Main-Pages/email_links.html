@@ -1,0 +1,35 @@
+<html>
+    <body>
+        <h1 style="text-align: center;">HTML - Email Links</h1>
+        <p>
+            It is not difficult to put an HTML email link on your webpage but it can cause unnecessary spamming problem for your email account. 
+            There are people, who can run programs to harvest these types of emails and later use them for spamming in various ways.
+            <br>
+            You can have another option to facilitate people to send you emails. 
+            One option could be to use HTML forms to collect user data and then use PHP or CGI script to send an email.
+        </p>
+        <h3>HTML Email Tag</h3>
+        <p>
+            HTML &lt;a&gt; tag provides you option to specify an email address to send an email. 
+            While using &lt;a&gt; tag as an email tag, you will use mailto: email address along with href attribute. 
+            Following is the syntax of using mailto instead of using http.
+            <span style="padding:15px;margin:10px;display:block;background-color:ivory;border:1px solid gray">
+                &lt;a href = "mailto: abc@example.com"&gt;Send Email&lt;/a&gt;
+            </span>
+        </p>
+        <p>
+            Now, if a user clicks this link, it launches one Email Client (like Lotus Notes, Outlook Express etc. ) installed on your user's computer.
+            There is another risk to use this option to send email because if user do not have email client installed on their computer then it would not be possible to send email.
+        </p>
+        <h3>Default Settings</h3>
+        <p>
+            You can specify a default email subject and email body along with your email address. 
+            Following is the example to use default subject and body.
+            <span style="padding:15px;margin:10px;display:block;background-color:ivory;border:1px solid gray">
+                &lt;a href = "mailto:abc@example.com?subject = Feedback&body = Message"&gt;
+                    Send Feedback
+                    &lt;/a&gt;
+            </span>
+        </p>
+    </body>
+</html>

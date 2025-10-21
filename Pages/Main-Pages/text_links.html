@@ -1,0 +1,168 @@
+<html>
+    <body>
+        <h1 style="text-align: center;">HTML - Text Links</h1>
+        <div class="text-links">
+            <p>
+                A webpage can contain various links that take you directly to other pages and even specific parts of a given page. 
+                These links are known as hyperlinks.
+                Hyperlinks allow visitors to navigate between Web sites by clicking on words, phrases, and images. 
+                Thus you can create hyperlinks using text or images available on a webpage.
+            </p>
+            <h3>Linking Documents</h3>
+            <p>
+                A link is specified using HTML tag &lt;a&gt;. 
+                This tag is called anchor tag and anything between the opening &lt;a&gt; tag and the closing &lt;/a&gt; tag becomes part of the link 
+                and a user can click that part to reach to the linked document.
+                <br>
+                Following is the simple syntax to use &lt;a&gt; tag.
+                <span style="padding:15px;margin:10px;display:block;background-color:ivory;border:1px solid gray">
+                    &lt;a href = "Document URL" ... attributes-list&gt;Link Text&lt;/a&gt;
+                </span>
+            </p>
+            <p>Example :- </p>
+            <section style="padding:15px;margin:10px;display:block;background-color:ivory;border:1px solid gray">
+                <pre style="font-size: 15px;">
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    
+                    &lt;head&gt;
+                        &lt;title&gt;Hyperlink Example&lt;/title&gt;
+                    &lt;/head&gt;
+                        
+                    &lt;body&gt;
+                        &lt;p&gt;Click following link&lt;/p&gt;
+                        &lt;a href = "../../../index.html" target = "_self"&gt;Home Page&lt;/a&gt;
+                    &lt;/body&gt;
+                        
+                    &lt;/html&gt;
+                </pre>
+                <a href="../Examples/Text-Link-Page-Examples/exp51.html" target="_blank" style="background-color:gray;color:white ;padding: 15px;text-decoration: none;">Run Example</a>
+            </section>
+            <h3>The target Attribute</h3>
+            <p>
+                We have used target attribute in our previous example.
+                This attribute is used to specify the location where linked document is opened. Following are the possible options −
+            </p>
+            <table style="width: 50%;border: 1px solid black; border-collapse: collapse;">
+                <tr style="border: 1px solid black;border-collapse: collapse;">
+                    <th style="border: 1px solid black;width:15% ;padding:10px;"> Sr.No</th>
+                    <th style="padding:10px">Option & Description</th>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black; text-align: center;" class="col-1">1</td>
+                    <td class="col-2" style="padding:10px">
+                        <h4 style="margin-bottom:10px">_blank</h4>
+                        <p style="margin-top:5px">Opens the linked document in a new window or tab.</p>
+                    </td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td class="col-1" style="border: 1px solid black;text-align: center;">2</td>
+                    <td class="col-2" style="padding:10px">
+                        <h4 style="margin-bottom:10px">_self</h4>
+                        <p style="margin-top:5px">Opens the linked document in the same frame.</p>
+                    </td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td class="col-1" style="border: 1px solid black; text-align: center;">3</td>
+                    <td class="col-2" style="padding:10px">
+                        <h4 style="margin-bottom:10px">_parent</h4>
+                        <p style="margin-top:5px">Opens the linked document in the parent frame.</p>
+                    </td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td class="col-1" style="border: 1px solid black;text-align: center;">4</td>
+                    <td class="col-2" style="padding:10px">
+                        <h4 style="margin-bottom:10px">_top</h4>
+                        <p style="margin-top:5px">
+                            Opens the linked document in the full body of the window.
+                        </p>
+                    </td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td class="col-1" style="border: 1px solid black;text-align: center;">5</td>
+                    <td class="col-2" style="padding:10px">
+                        <h4 style="margin-bottom:10px">targetframe</h4>
+                        <p style="margin-top:5px">
+                            Opens the linked document in a named targetframe.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <p>Example :- </p>
+            <section style="padding:15px;margin:10px;display:block;background-color:ivory;border:1px solid gray">
+                <pre style="font-size: 15px;">
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+
+                    &lt;head&gt;
+                        &lt;title&gt;Hyperlink Example&lt;/title&gt;
+                        &lt;base href = ""&gt;
+                    &lt;/head&gt;
+                        
+                    &lt;body&gt;
+                        &lt;p&gt;Click any of the following links&lt;/p&gt;
+                        &lt;a href = "../../../index.html" target = "_blank"&gt;Opens in New&lt;/a&gt; |
+                        &lt;a href = "../../../index.html" target = "_self"&gt;Opens in Self&lt;/a&gt; |
+                        &lt;a href = "../../../index.html" target = "_parent"&gt;Opens in Parent&lt;/a&gt; |
+                        &lt;a href = "../../../index.html" target = "_top"&gt;Opens in Body&lt;/a&gt;
+                    &lt;/body&gt;
+
+                    &lt;/html&gt;
+                </pre>
+                <a href="../Examples/Text-Link-Page-Examples/exp52.html" target="_blank" style="background-color:gray;color:white ;padding: 15px;text-decoration: none;">Run Example</a>
+            </section>
+            <h3>Use of Base Path</h3>
+            <p>
+                When you link HTML documents related to the same website, it is not required to give a complete URL for every link.
+                You can get rid of it if you use &lt;base&gt; tag in your HTML document header. This tag is used to give a base path for all the links. 
+                So your browser will concatenate given relative path to this base path and will make a complete URL.
+            </p>
+            <p>Example :- </p>
+            <p>
+                Following example makes use of &lt;base&gt;
+                tag to specify base URL and later we can use relative path to all the links instead of giving complete URL for every link.
+            </p>
+            <section style="padding:15px;margin:10px;display:block;background-color:ivory;border:1px solid gray">
+                <pre style="font-size: 15px;">
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+
+                    &lt;head&gt;
+                        &lt;title&gt;Hyperlink Example&lt;/title&gt;
+                        &lt;base href = ""&gt;
+                    &lt;/head&gt;
+                        
+                    &lt;body&gt;
+                        &lt;p&gt;Click following link&lt;/p&gt;
+                        &lt;a href = "../../../index.html" target = "_blank"&gt;HTML Tutorial&lt;/a&gt;
+                    &lt;/body&gt;
+                        
+                    &lt;/html&gt;
+                </pre>
+                <a href="../Examples/Text-Link-Page-Examples/exp53.html" target="_blank" style="background-color:gray;color:white ;padding: 15px;text-decoration: none;">Run Example</a>
+            </section>
+            <h3>Setting Link Colors</h3>
+            <p>You can set colors of your links, active links and visited links using link, alink and vlink attributes of <body> tag.</p>
+            <p>Example</p>
+            <section style="padding:15px;margin:10px;display:block;background-color:ivory;border:1px solid gray">
+                <pre style="font-size: 15px;">
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+                    
+                    &lt;head&gt;
+                        &lt;title&gt;Hyperlink Example&lt;/title&gt;
+                        &lt;base href = ""&gt;
+                    &lt;/head&gt;
+                        
+                    &lt;body alink = "#54A250" link = "#040404" vlink = "#F40633"&gt;
+                        &lt;p&gt;Click following link&lt;/p&gt;
+                        &lt;a href = "../../../index.html" target = "_blank" &gt;HTML Tutorial&lt;/a&gt;
+                    &lt;/body&gt;
+                    
+                    &lt;/html&gt;
+                </pre>
+                <a href="../Examples/Text-Link-Page-Examples/exp54.html" target="_blank" style="background-color:gray;color:white ;padding: 15px;text-decoration: none;">Run Example</a>
+            </section>
+        </div>
+    </body>
+</html>

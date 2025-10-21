@@ -1,0 +1,74 @@
+<html>
+    <body>
+        <h1 style="text-align: center;">HTML - Elements</h1>
+        <div class="elements">
+            <p>
+                An HTML element is defined by a starting tag. 
+                If the element contains other content, it ends with a closing tag, 
+                where the element name is preceded by a forward slash as shown below with few tags 
+            </p>
+            <table style="border-collapse: collapse;">
+                <tr>
+                    <th  style="border:1px solid gray;padding: 15px;">Start Tag</th>
+                    <th  style="border:1px solid gray;padding: 15px;">Content</th>
+                    <th  style="border:1px solid gray;padding: 15px;">End Tag</th>
+                </tr>
+                <tr style="border:1px solid gray">
+                    <td style="border:1px solid gray;padding: 15px;">&lt;p&gt;</td>
+                    <td style="border:1px solid gray;padding: 15px;">This is paragraph content</td>
+                    <td style="border:1px solid gray;padding: 15px;">&lt;/p&gt;</td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid gray;padding: 15px;">&lt;h1&gt;</td>
+                    <td style="border:1px solid gray;padding: 15px;">This is heading content</td>
+                    <td style="border:1px solid gray;padding: 15px;">&lt;/h1&gt;</td>
+                </tr>
+                <tr>
+                    <td style="border:1px solid gray;padding: 15px;">&lt;div&gt;</td>
+                    <td style="border:1px solid gray;padding: 15px;">This is division content</td>
+                    <td style="border:1px solid gray;padding: 15px;">&lt;/div&gt;</td>
+                </tr>
+            </table>
+            <p>
+                So here &lt;p&gt;....&lt;/p&gt; is an HTML element, &lt;h1&gt;...&lt;/h1&gt; is another HTML element.
+                There are some HTML elements which don't need to be closed, such as &lt;img/&gt;, &lt;hr /&gt; and &lt;br /&gt; elements.
+                These are known as void elements.
+                HTML documents consists of a tree of these elements and they specify how HTML documents should be built, 
+                and what kind of content should be placed in what part of an HTML document.
+            </p>
+            <h3>
+                HTML Tag vs. Element
+            </h3>
+            <p>
+                An HTML element is defined by a starting tag. If the element contains other content, it ends with a closing tag.
+                For example, &lt;p&gt; is starting tag of a paragraph and &lt;/p&gt; is closing tag of the same paragraph but &lt;p&gt;
+                This is paragraph&lt;/p&gt; is a paragraph element.
+            </p>
+            <h3>
+                Nested HTML Elements
+            </h3>
+            <p>
+                It is very much allowed to keep one HTML element inside another HTML element −
+            </p>
+            <p>Example :- </p>
+            <section style="padding:15px;margin:10px;display:block;background-color:ivory;border:1px solid gray">
+                <pre style="font-size: 15px;">
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+
+                    &lt;head&gt;
+                        &lt;title&gt;Nested Elements Example&lt;/title&gt;
+                    &lt;/head&gt;
+                        
+                    &lt;body&gt;
+                        &lt;h1&gt;This is &lt;i&gt;italic&lt;/i&gt; heading&lt;/h1&gt;
+                        &lt;p&gt;This is &lt;u&gt;underlined&lt;/u&gt; paragraph&lt;/p&gt;
+                    &lt;/body&gt;
+                        
+                    &lt;/html&gt;
+                </pre>
+                <a href="../Examples/Element-Page-Examples/exp7.html" target="_blank" style="background-color:gray;color:white ;padding: 15px;text-decoration: none;">Run Example</a>
+            </section>
+        </div>
+    </body>
+</html>

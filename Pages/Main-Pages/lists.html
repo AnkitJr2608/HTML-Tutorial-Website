@@ -1,0 +1,178 @@
+<html>
+    <body>
+        <h1 style="text-align: center;">HTML - Lists</h1>
+        <div class="lists">
+            HTML offers web authors three ways for specifying lists of information. All lists must contain one or more list elements.
+            <br>
+            Lists may contain −
+            <ul type="square">
+                <li>&lt;ul&gt; − An unordered list. This will list items using plain bullets.</li>
+                <li>&lt;ol&gt; − An ordered list. This will use different schemes of numbers to list your items.</li>
+                <li>&lt;dl&gt; − A definition list. This arranges your items in the same way as they are arranged in a dictionary.</li>
+            </ul>
+            <h3>HTML Unordered Lists</h3>
+            <p>
+                An unordered list is a collection of related items that have no special order or sequence. This list is created by using HTML &lt;ul&gt; tag. 
+                Each item in the list is marked with a bullet.
+            </p>
+            <h3>The type Attribute</h3>
+            <p>
+                You can use type attribute for &lt;ul&gt; tag to specify the type of bullet you like. By default, it is a disc. 
+                <br>
+                Following are the possible options −
+                <span style="padding:15px;margin:10px;display:block;background-color:ivory;border:1px solid gray">
+                    &lt;ul type = "square"&gt;
+                    <br>
+                    &lt;ul type = "disc"&gt;
+                    <br>
+                    &lt;ul type = "circle"&gt;
+                </span>
+            </p>
+            <p>Example :- </p>
+            <section style="padding:15px;margin:10px;display:block;background-color:ivory;border:1px solid gray">
+                <pre style="font-size: 15px;">
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+
+                    &lt;head&gt;
+                        &lt;title&gt;HTML Unordered List&lt;/title&gt;
+                    &lt;/head&gt;
+                        
+                    &lt;body&gt;
+                        &lt;ul&gt;
+                            &lt;li&gt;Beetroot&lt;/li&gt;
+                            &lt;li&gt;Ginger&lt;/li&gt;
+                            &lt;li&gt;Potato&lt;/li&gt;
+                            &lt;li&gt;Radish&lt;/li&gt;
+                        &lt;/ul&gt;
+                    &lt;/body&gt;
+                    
+                    &lt;/html&gt;
+                </pre>
+                <a href="../Examples/Lists-Page-Examples/exp47.html" target="_blank" style="background-color:gray;color:white ;padding: 15px;text-decoration: none;">Run Example</a>
+            </section>
+            <h3>HTML Ordered Lists</h3>
+            <p>
+                If you are required to put your items in a numbered list instead of bulleted, then HTML ordered list will be used. 
+                This list is created by using &lt;ol&gt; tag.
+                The numbering starts at one and is incremented by one for each successive ordered list element tagged with &lt;li&gt;.
+            </p>
+            <h3>The type Attribute</h3>
+            <p>
+                You can use type attribute for &lt;ol&gt; tag to specify the type of numbering you like.
+                By default, it is a number. Following are the possible options −
+                <span style="padding:15px;margin:10px;display:block;background-color:ivory;border:1px solid gray">
+                    &lt;ol type = "1"&gt; - Default-Case Numerals.
+                    <br>
+                    &lt;ol type = "I"&gt; - Upper-Case Numerals.
+                    <br>
+                    &lt;ol type = "i"&gt; - Lower-Case Numerals.
+                    <br>
+                    &lt;ol type = "A"&gt; - Upper-Case Letters.
+                    <br>
+                    &lt;ol type = "a"&gt; - Lower-Case Letters.
+                </span>
+            </p>
+            <p>Example :- </p>
+            <section style="padding:15px;margin:10px;display:block;background-color:ivory;border:1px solid gray">
+                <pre style="font-size: 15px;">
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+
+                    &lt;head&gt;
+                        &lt;title&gt;HTML Unordered List&lt;/title&gt;
+                    &lt;/head&gt;
+                        
+                    &lt;body&gt;
+                        &lt;ol&gt;
+                            &lt;li&gt;Beetroot&lt;/li&gt;
+                            &lt;li&gt;Ginger&lt;/li&gt;
+                            &lt;li&gt;Potato&lt;/li&gt;
+                            &lt;li&gt;Radish&lt;/li&gt;
+                        &lt;/ol&gt;
+                    &lt;/body&gt;
+                    
+                    &lt;/html&gt;
+                </pre>
+                <a href="../Examples/Lists-Page-Examples/exp48.html" target="_blank" style="background-color:gray;color:white ;padding: 15px;text-decoration: none;">Run Example</a>
+            </section>
+            <h3>The start Attribute</h3>
+            <p>
+                You can use start attribute for &lt;ol&gt; tag to specify the starting point of numbering you need. Following are the possible options −
+                <span style="padding:15px;margin:10px;display:block;background-color:ivory;border:1px solid gray">
+                    &lt;ol type = "1" start = "4"&gt;    - Numerals starts with 4.
+                    <br>
+                    &lt;ol type = "I" start = "4"&gt;    - Numerals starts with IV.
+                    <br>
+                    &lt;ol type = "i" start = "4"&gt;    - Numerals starts with iv.
+                    <br>
+                    &lt;ol type = "a" start = "4"&gt;    - Letters starts with d.
+                    <br>
+                    &lt;ol type = "A" start = "4"&gt;    - Letters starts with D.
+                </span>
+            </p>
+            <p>Example :- </p>
+            <section style="padding:15px;margin:10px;display:block;background-color:ivory;border:1px solid gray">
+                <pre style="font-size: 15px;">
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+
+                    &lt;head&gt;
+                        &lt;title&gt;HTML Ordered List&lt;/title&gt;
+                    &lt;/head&gt;
+                        
+                    &lt;body&gt;
+                        &lt;ol type = "i" start = "4"&gt;
+                            &lt;li&gt;Beetroot&lt;/li&gt;
+                            &lt;li&gt;Ginger&lt;/li&gt;
+                            &lt;li&gt;Potato&lt;/li&gt;
+                            &lt;li&gt;Radish&lt;/li&gt;
+                        &lt;/ol&gt;
+                    &lt;/body&gt;
+                        
+                    &lt;/html&gt;
+                        
+                </pre>
+                <a href="../Examples/Lists-Page-Examples/exp49.html" target="_blank" style="background-color:gray;color:white ;padding: 15px;text-decoration: none;">Run Example</a>
+            </section>
+            <h3>HTML Definition Lists</h3>
+            <p>
+                HTML and XHTML supports a list style which is called definition lists where entries are listed like in a dictionary or encyclopedia. 
+                The definition list is the ideal way to present a glossary, list of terms, or other name/value list.
+                <br>
+                Definition List makes use of following three tags.
+                <ul type="square">
+                    <li>&lt;dl&gt; − Defines the start of the list</li>
+                    <li>&lt;dt&gt; − A term</li>
+                    <li>&lt;dd&gt; − Term definition</li>
+                    <li>&lt;/dl&gt; − Defines the end of the list</li>
+                </ul>
+            </p>
+            <p>Example :- </p>
+            <section style="padding:15px;margin:10px;display:block;background-color:ivory;border:1px solid gray">
+                <pre style="font-size: 15px;">
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html&gt;
+
+                    &lt;head&gt;
+                        &lt;title&gt;HTML Definition List&lt;/title&gt;
+                    &lt;/head&gt;
+                        
+                    &lt;body&gt;
+                        &lt;dl&gt;
+                            &lt;dt&gt;&lt;b&gt;HTML&lt;/b&gt;&lt;/dt&gt;
+                            &lt;dd&gt;This stands for Hyper Text Markup Language&lt;/dd&gt;
+                            &lt;dt&gt;&lt;b&gt;HTTP&lt;/b&gt;&lt;/dt&gt;
+                            &lt;dd&gt;This stands for Hyper Text Transfer Protocol&lt;/dd&gt;
+                        &lt;/dl&gt;
+                    &lt;/body&gt;
+                        
+                    &lt;/html&gt;
+                        
+                </pre>
+                <a href="../Examples/Lists-Page-Examples/exp50.html" target="_blank" style="background-color:gray;color:white ;padding: 15px;text-decoration: none;">Run Example</a>
+            </section>
+
+        </div>
+    </body>
+</html>
